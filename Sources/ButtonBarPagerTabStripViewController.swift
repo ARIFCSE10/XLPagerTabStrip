@@ -107,7 +107,7 @@ open class ButtonBarPagerTabStripViewController: PagerTabStripViewController, Pa
                 label.font = self?.settings.style.buttonBarItemFont
                 label.text = childItemInfo.title
                 let labelSize = label.intrinsicContentSize
-                return labelSize.width + (self?.settings.style.buttonBarItemLeftRightMargin ?? 8) * 2
+                return labelSize.width + (self?.settings.style.buttonBarItemLeftRightMargin ?? 8) * 2 + 36
         })
 
         let buttonBarViewAux = buttonBarView ?? {
