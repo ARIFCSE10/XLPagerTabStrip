@@ -220,7 +220,7 @@
             label.text = [childController titleForPagerTabStripViewController:self];
             CGSize labelSize = [label intrinsicContentSize];
             
-            CGFloat minimumCellWidth = labelSize.width + (self.buttonBarView.leftRightMargin * 2);
+            CGFloat minimumCellWidth = labelSize.width + (self.buttonBarView.leftRightMargin * 2) + 36;
             NSNumber *minimumCellWidthValue = [NSNumber numberWithFloat:minimumCellWidth];
             [minimumCellWidths addObject:minimumCellWidthValue];
             
